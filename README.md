@@ -1,6 +1,4 @@
-# RetroMatch
-
-# VintageSwipe  
+# RetroMatch 
 
 ## Descripción  
 **VintageSwipe** es una plataforma innovadora que combina la experiencia de un marketplace vintage con la interactividad de una app estilo Tinder. Su objetivo es ofrecer a los usuarios una forma divertida y única de descubrir ropa y objetos vintage.  
