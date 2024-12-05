@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RetroMatch 
 
-## Getting Started
+## Descripción  
+**VintageSwipe** es una plataforma innovadora que combina la experiencia de un marketplace vintage con la interactividad de una app estilo Tinder. Su objetivo es ofrecer a los usuarios una forma divertida y única de descubrir ropa y objetos vintage.  
 
-First, run the development server:
+El concepto es simple: cada usuario ve un artículo vintage a la vez en formato de tarjeta.  
+- Si hace **swipe a la derecha**, el artículo se añade a su lista de deseos y se abre un chat directo con el vendedor.  
+- Si hace **swipe a la izquierda**, simplemente pasa al siguiente artículo.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+¡Así de sencillo y emocionante!  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Características principales  
+1. **Exploración de artículos vintage uno a uno**  
+   Los usuarios pueden centrarse en un único artículo a la vez, disfrutando de cada detalle.  
+   
+2. **Lista de deseos personalizada**  
+   Solo con un swipe a la derecha, los artículos favoritos se añaden automáticamente a una lista de deseos.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Chat directo con vendedores**  
+   Al expresar interés en un artículo, los usuarios pueden contactar directamente con el vendedor para discutir detalles.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Diseño atractivo y minimalista**  
+   La interfaz está inspirada en el diseño vintage con un toque moderno, utilizando colores cálidos y una estética elegante.  
 
-## Learn More
+## Cómo funciona  
+1. **Explora**  
+   Al abrir la app, verás una tarjeta con un artículo vintage. Cada tarjeta incluye:  
+   - Una foto atractiva del artículo.  
+   - Su nombre y descripción.  
+   - Precio y detalles del vendedor.  
 
-To learn more about Next.js, take a look at the following resources:
+2. **Haz swipe**  
+   - **Swipe a la derecha**: Añade el artículo a tu lista de deseos y abre el chat con el vendedor.  
+   - **Swipe a la izquierda**: Pasa al siguiente artículo.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Conecta**  
+   Si un artículo te gusta, utiliza el chat para hablar directamente con el vendedor y completar la compra.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estructura del proyecto  
+- **Frontend**: React.js  
+- **Backend**: No se utiliza, el proyecto está basado en datos estáticos almacenados en un archivo `data.json`.  
+- **Datos**: Los artículos se cargan desde un archivo JSON que contiene información sobre cada producto y su vendedor.  
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Ejemplo de datos en `data.json`  
+```json
+[
+  {
+    "id": 1,
+    "title": "Chaqueta de cuero vintage",
+    "image": "url_a_la_imagen.jpg",
+    "description": "Chaqueta de cuero negro de los años 80, en perfecto estado.",
+    "price": "40€",
+    "seller": {
+      "name": "María López",
+      "chat": "enlace_falso_chat"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Vestido floral años 70",
+    "image": "url_a_la_imagen.jpg",
+    "description": "Vestido largo con estampado floral, perfecto para primavera.",
+    "price": "30€",
+    "seller": {
+      "name": "Juan Pérez",
+      "chat": "enlace_falso_chat"
+    }
+  }
+]
