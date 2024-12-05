@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Chaqueta de cuero vintage",
+      "image": "url_a_la_imagen.jpg",
+      "description": "Chaqueta de cuero negro de los años 80, en perfecto estado.",
+      "price": "40€",
+      "seller": {
+        "name": "María López",
+        "chat": "enlace_falso_chat"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Vestido floral años 70",
+      "image": "url_a_la_imagen.jpg",
+      "description": "Vestido largo con estampado floral, perfecto para primavera.",
+      "price": "30€",
+      "seller": {
+        "name": "Juan Pérez",
+        "chat": "enlace_falso_chat"
+      }
+    }
+  ]
