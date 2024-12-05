@@ -23,3 +23,21 @@
 .card button {
   margin: 5px;
 }
+
+/* src/components/header.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.header__logo {
+  object-fit: contain;
+  height: 90px;
+}
+
+.header__icon {
+  padding: 20px;
+}
