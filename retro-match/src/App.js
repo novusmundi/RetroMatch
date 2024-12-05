@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import CardContainer from './components/CardContainer';
-import SwipeButton from './components/SwipeButton';
 
 function App() {
     return (
@@ -12,7 +11,6 @@ function App() {
             <main>
                 <CardContainer />
             </main>
-            <SwipeButton />
         </div>
     );
 }
